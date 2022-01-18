@@ -1,0 +1,95 @@
+<!-- 
+    /********************************************************************************* 
+*
+* WEB222 – Assignment #4
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: George Kurkjian  Student ID: 137555207 Date: Nov 21-2021 
+* 
+********************************************************************************/
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>WEB222 Assignment 4</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/assignment4-theme.css" />
+        <link rel="stylesheet" href="css/a4-main.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bangers&family=Karla:ital,wght@1,200&display=swap');
+            </style>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+        </style>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" type="text/css">
+
+
+        <script src="js/data.js"></script>
+        <script src="js/a4-main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <h1 class="app-title">
+                    ~ Purefect Pets ~
+                </h1>
+            </div>
+        </header>
+        <nav>
+            <div class="center">
+                <ul>
+                    <!-- <li><a onclick="console.log('All Pets')">All Pets</a></li>
+                    <li><span>|</span></li>
+                    <li><a onclick="console.log('Only Dogs')">Dogs</a></li>
+                    <li><a onclick="console.log('Only Cats')">Cats</a></li>
+                    <li><a onclick="console.log('Only Birds')">Birds</a></li>
+                    <li><span>|</span></li>
+                    <li><a onclick="console.log('Pets < 1 year')">&lt; 1 year</a></li>
+                    <li><a onclick="console.log('Pets from 1 to 3 years')">1 - 3 years</a></li> -->
+
+                    <li><a onclick="filterAllPets()">All Pets <i class="fas fa-paw"></i></a></li>
+                    <!-- <li><span>|</span></li> -->
+                    <li><a onclick="filterDog()">Dogs <i class="fas fa-dog"></i></a></li>
+                    <li><a onclick="filterCat()">Cats <i class="fas fa-cat"></i></a></li>
+                    <li><a onclick="filterBird()">Birds <i class="fas fa-dove"></i></a></li>
+                    <!-- <li><span>|</span></li> -->
+                    <li><a onclick="filter_zero_1()">&lt; 1 year</a></li>
+                    <li><a onclick="filter_1_3()">1 - 3 years</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <section class="main center">
+            <table class="main-table-top">
+                <tbody>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Description</th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="main-table-container">
+                <table class="main-table">
+                    <tbody id="main-table-body">
+                    <!-- Here is the action will going on.  -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                &copy; 2021 Student Name:  George Kurkjian
+            </div>
+        </footer>
+    </body>
+</html>
+
+
